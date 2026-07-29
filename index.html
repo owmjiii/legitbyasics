@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LegIT ASICS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="parent-container">
+
+        <div class="info-container">
+
+            <div class="logo">
+                <img src="Logo.png  " alt="">
+            </div>
+
+            <div class="name-section">
+                <span id="name">MERVIN JOHN DC. MASSALANG</span>
+                <span id="section">BSIT 3-DG2</span>
+            </div>
+
+            <div class="points-earned">
+                <span id="point">50</span>
+                <span>EARNED POINTS</span>
+            </div>
+
+        </div>
+
+        <div class="history-container" id="card">
+
+            <div id="toggle">
+
+                <span>POINTS HISTORY</span>
+                <span id="arrow">▼</span>
+
+            </div>
+
+            <div class="content">
+
+                <div class="table-wrap">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>ACTIVITY</th>
+                                <th>POINTS EARNED</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="historyBody">
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+            <div class="footer">
+                <p>Last Updated: <span>07.28.26</span></p>
+            </div>
+
+        </div>
+
+        <p class="exclusive">EXCLUSIVE FOR ASICS LegIT MEMBERS ONLY</p>
+
+    </div>
+
+    <script>
+
+        const pointsHistory = [
+            {activity: "ASICS 2026 Lanyard", points: 10},
+            {activity: "ASICS 2026 Shirt", points: 10},
+            {activity: "IT Day", points: 30}
+        ];
+
+        const historyBody = document.getElementById('historyBody');
+        pointsHistory.forEach(entry => {
+            const row = document.createElement('tr');
+            row.innerHTML = `<td>${entry.activity}</td><td>${entry.points} POINTS</td>`;
+            historyBody.appendChild(row);
+        });
+
+        const card = document.getElementById('card');
+        const toggle = document.getElementById('toggle');
+
+        toggle.addEventListener('click', () => {
+            card.classList.toggle('open');
+        });
+
+    </script>
+
+</body>
+
+</html>
