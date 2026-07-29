@@ -16,7 +16,7 @@
     .parent-container {
 
         width: 80%;
-        max-width: 470px;
+        max-width: 450px;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -161,6 +161,7 @@
         font-family: "poppins";
         font-weight: 700;
         font-size: clamp(14px, 5vw, 20px);
+        text-align: center;
 
         margin: 0;
 
