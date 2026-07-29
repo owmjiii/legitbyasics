@@ -15,8 +15,7 @@
 
     .parent-container {
 
-        width: 450px;
-        min-width: 70%;
+        width: 80%;
         display: flex;
         align-items: center;
         flex-direction: column;
