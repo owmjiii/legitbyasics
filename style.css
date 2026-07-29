@@ -16,7 +16,7 @@
     .parent-container {
 
         width: 500px;
-        min-width: 90%;
+        min-width: 80%;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -138,7 +138,6 @@
     .logo img {
 
         width: 180px;
-
 
     }
 
