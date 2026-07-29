@@ -230,7 +230,7 @@
         align-items: center;
         flex-direction: column;
 
-        padding-block: 15px;
+        padding-block: 0;
 
     }
 
@@ -245,7 +245,7 @@
         width: 100%;
         padding-inline: 20px;
         box-sizing: border-box;
-        padding-bottom: 5px;
+        padding-block: 15px;
 
     }
 
